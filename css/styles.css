@@ -5,6 +5,54 @@
 /*Цвет фона #E5E5E5 */
 /*Вторичный цвет фона  #F5F4FA; */
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+/* Класс для обнуления базовых свойств у списков (ul) */
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Класс для обнуления базовых свойств у ссылок */
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Свойства для корректного отображения картинок */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Свойства для обнуления курсива у address */
+address {
+    font-style: normal;
+}
+
+
+
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -41,6 +89,11 @@
     overflow: hidden;
 }
 
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 /* logo WebStudio */
 .logo {
@@ -98,7 +151,9 @@ list-style: none;
 
 /* hero */
 .hero {
-    background-color: #2F303A;;
+    background-color: #2F303A;
+    text-align: center;
+   /* outline: solid red;*/
 }
 .hero-title {
     color: var(--white-color);
@@ -109,6 +164,8 @@ list-style: none;
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
+
+        margin-bottom: 30px;
 }
 
 
@@ -168,10 +225,17 @@ list-style: none;
 }
 
 /* button */
-.button.hero{
+.button.hero {
     font-family: inherit;
     color: var(--white-color);
     background-color: var(--accent-color);
+
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    text-align: center;
+   
+
 }
 
 /* button */
