@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css" />
+
     <link rel="stylesheet" href="./css/styles.css">
     
 </head> 
@@ -33,9 +35,10 @@
     </header>
 
     <main>
-        <section class="section">
-        <h1 class="visually-hidden">Портфолио</h1>  <!--Сделать невидимым-->
-            <ul class="filter list">
+        <section class="section filter">
+            <div class="container">
+             <h1 class="visually-hidden">Портфолио</h1>  <!--Сделать невидимым-->
+            <ul class="filter-list-btn list">
                 <li><button type="button" class="button portfolio pointer butcurrent">Все</button></li>
                 <li><button type="button" class="button portfolio pointer">Веб-сайты</button></li>
                 <li><button type="button" class="button portfolio pointer">Приложения</button></li>
@@ -43,7 +46,7 @@
                 <li><button type="button" class="button portfolio pointer">Маркетинг</button></li>
             </ul>
     
-            <ul class="filter list">
+            <ul class="filter-list list">
                 <li>
                     <a href="" class="filter-link">
                     <img src="./images/websitetechno.jpg" alt="Веб-сайт Технокряк" width="370" />
@@ -108,6 +111,7 @@
                     </a>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
 
