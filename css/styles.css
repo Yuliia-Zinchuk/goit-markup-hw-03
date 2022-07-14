@@ -63,6 +63,7 @@ address {
     --secondary-bg-color: #F5F4FA;
     --white-color: #FFFFFF;
     --black-color: #000000;
+    --distance-elements: 30px;
 }
 
 .body {
@@ -266,7 +267,7 @@ list-style: none;
 
 .advant-list {
     display: flex;
-    gap: 30px;
+    gap: var(--distance-elements);
 }
 
 .advant-item {
@@ -286,7 +287,7 @@ list-style: none;
 
 .employ-list {
     display: flex;
-    gap:30px;
+    gap: var(--distance-elements);
     margin-top: 50px;
 }
 
@@ -318,7 +319,7 @@ list-style: none;
 
 .team-list {
     display: flex;
-    gap: 30px;
+    gap: var(--distance-elements);
     margin-top: 50px;   
 }
 
@@ -417,7 +418,7 @@ list-style: none;
 .filter-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: var(--distance-elements);
 }
 
 
