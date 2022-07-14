@@ -95,31 +95,45 @@ address {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    
 }
 
-.text {
-    /* Setting the margin between the border and the element's content */
+/*.text {
+     Setting the margin between the border and the element's content 
     width: 1200px;
     padding-left: 20px;
     padding-right: 20px;
 
     background-color: tomato;
     border: 2px dashed red;
-}
+}*/
 
 .color {
 background-color: tomato;
 outline: green;
 }
 
-/*.section {
+.section {
+    background-color: tomato;
     outline: solid red;
-}*/
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/*title of section*/
+.section-title {
+    color: var(--title-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
 
 /* logo WebStudio */
 .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+
     text-decoration: none;
     font-family: raleway, sans-serif;
     color: var(--black-color);
@@ -140,7 +154,7 @@ list-style: none;
 }
 
 
-/* site-nav and contact - header*/
+/* --------- HEADER -----------------*/
 .site-nav,
 .contact {
     font-weight: 500;
@@ -157,8 +171,6 @@ list-style: none;
 
     text-decoration: none;
     color: var(--title-text-color);
-
-
 }
 
 /*hover and focus site-nav*/
@@ -169,6 +181,8 @@ list-style: none;
 
 /*contact - mail and phone*/
 .contact .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
     text-decoration: none;
     color: var(--primary-text-color);
 }
@@ -179,40 +193,83 @@ list-style: none;
     color: var(--accent-color);
 }
 
-/* hero */
-.hero {
-    background-color: #2F303A;
-    text-align: center;
+/* link on current page = accent color*/
+.site-nav .link.current {
+    color: var(--accent-color);
+}
 
-   /* height: 600px;
-    width: 1600px;*/
-    outline: solid red;
+.site-nav {
+    margin-left: 93px;
+
+}
+
+.site-nav .site-nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact .contact-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.page-header,
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+/* ----------- HERO ------------------ */
+.hero {
+ 
+    padding-top: 200px;
+    padding-bottom: 200px;
+   
+
+    background-color: #2F303A;
+  
 }
 .hero-title {
+    max-width: 696px;
+   /* margin: 200px 452px 30px 452px;*/
+   
+    margin: 0 auto 30px;
+
+        
     color: var(--white-color);
-    margin-bottom: 30px;
         
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
         text-align: center;
         letter-spacing: 0.06em;
-        text-transform: uppercase;
-       
-        /*width: 696px;
-        height: 120px;*/
+        text-transform: uppercase; 
 }
 
 
-/*title of section*/
-.section-title {
-    color: var(--title-text-color);
-        font-size: 36px;
-        line-height: 1.17;
-        text-align: center;
+/* hero-button */
+.hero-btn {
+    padding: 10px 32px;
+    margin: 0 auto 0;
+    min-width: 200px;
+
+    font-family: inherit;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* advant */
+
+
+
+/* -------------- ADVANT -------------- */
 .advant-title {
     color: var(--title-text-color);
         font-size: 14px;
@@ -220,6 +277,14 @@ list-style: none;
         text-transform: uppercase;
 }
 
+
+/*---------- EMPLOYMENT ----------------*/
+.section-employ {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* ---------------  TEAM --------------*/
  .team {
     background-color: var(--secondary-bg-color);
     text-align: center;
@@ -247,8 +312,13 @@ list-style: none;
 
 
 
-/* button */
+/* ------------- BUTTONS ----------- */
 .button {
+    display: block;
+    border-radius: 4px;
+    border: 0;
+
+
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -256,26 +326,11 @@ list-style: none;
     letter-spacing: 0.06em;
     text-align: center;
 
-    border-radius: 4px;
-    border: 0;
+   
 }
 
-/* button */
-.hero-btn {
-    font-family: inherit;
-    color: var(--white-color);
-    background-color: var(--accent-color);
 
-    
-    padding: 10px 32px;
-    min-width: 200px;
-    text-align: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    
-
-}
-
-/* button */
+/* portfolio-button */
 .button.portfolio{
     
     padding: 6px 22px;
@@ -294,6 +349,8 @@ list-style: none;
     margin-right: 8px;
 }
 .filter-list-btn {
+    margin-bottom: 34px;
+
 display: flex;
 justify-content: center;
 
@@ -319,11 +376,8 @@ justify-content: center;
     cursor: pointer;
 }
 
-/* link on current page = accent color*/
-.site-nav .link.current {
-    color: var(--accent-color);
-}
 
+/* --------------  FOOTER -------------- */
 /* footer contacts */
 .footer {
     background-color: #2F303A;;
@@ -332,12 +386,24 @@ justify-content: center;
 }
 
 .footer .logo {
-    color: var(--white-color);
+        display: block;
+           
+            padding-top: 60px;
+            padding-bottom: 20px;
+            color: var(--white-color);
 }
 
-.footer-link {
+.footer-contact {
+    padding-bottom: 60px;
+}
+
+.footer-link-item {
+    padding-top: 9px;
+}
+
+.footer-link{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .address {
@@ -349,7 +415,7 @@ justify-content: center;
     color: var(--accent-color);
 }
 
-/* portfolio */
+/* -------- PORTFOLIO --------- */
 .filter-link {
     text-decoration: none;
     color: var(--primary-text-color);
@@ -358,10 +424,15 @@ justify-content: center;
 }
 
 .filter-title {
+    padding-bottom: 4px;
     color: var(--title-text-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+}
+
+.filter-title-text {
+    padding: 20px 24px;
 }
 
 /*.list {
@@ -375,28 +446,5 @@ justify-content: center;
     /*align-items: center;
     justify-content: space-between;*/
 }
-.site-nav {
-    margin-left: 93px;
-   
-}
 
-.site-nav .site-nav-item:not(:last-child) {
-    margin-right: 50px;
-}
-
-.contact {
-    display: flex;
-}
-
-.contact .contact-item:not(:last-child){
-margin-right: 50px;
-}
-
-.page-header,
-.nav-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
 
