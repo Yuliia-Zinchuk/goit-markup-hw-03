@@ -1,4 +1,4 @@
-/*Цвет основного текста (заголовки) #212121;*/
+/*Цвет основного текста - заголовки #212121; */
 /*Вторичный цвет текста  #757575;*/
 /*Цвет акцента #2196F3;*/
 /*Белый #FFFFFF; ne znau: #2196F3;*/
@@ -394,8 +394,8 @@ list-style: none;
 
 .filter-list-item {
     background-color: var(--white-color);
-    border-bottom: 1px solid #EEEEEE;
 }
+
 .filter-link {
     text-decoration: none;
     color: var(--primary-text-color);
@@ -413,6 +413,9 @@ list-style: none;
 
 .filter-title-text {
     padding: 20px 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 
 .filter-list {
@@ -422,9 +425,6 @@ list-style: none;
 }
 
 
-
-
-
 /* portfolio-button */
 .button.portfolio {
 
@@ -432,6 +432,7 @@ list-style: none;
 
     color: var(--title-text-color);
     background-color: var(--secondary-bg-color);
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -440,16 +441,12 @@ list-style: none;
     letter-spacing: 0.03em;
 }
 
-.button.portfolio:not(last-child) {
-    margin-right: 8px;
-}
-
 .filter-list-btn {
     margin-bottom: 34px;
 
     display: flex;
     justify-content: center;
-
+    gap: 8px;
 }
 
 
