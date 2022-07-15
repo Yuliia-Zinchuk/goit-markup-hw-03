@@ -274,9 +274,7 @@ list-style: none;
 }
 
 .advant-item {
-    min-width: 270px;
-}
-
+    min-width: 270px; 
 /*.advant-item:not(:last-child) {
     margin-right: 30px;
     outline: 2px solid red;
@@ -296,7 +294,7 @@ list-style: none;
 
 /* ---------------  TEAM --------------*/
  .team {
-    
+    background-color: var(--secondary-bg-color);
     text-align: center;
 }
 /* job title of team */
